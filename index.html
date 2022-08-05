@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <style>
+      .container {
+        height: 100000px;
+        background: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/">Other page</a>
+    </nav>
+    <main class="container" id="app">
+      <h1>Home page</h1>
+    </main>
+    <script>
+      document.querySelector('#app').addEventListener(
+        'touchmove',
+        (e) => {
+          console.log(e);
+          e.preventDefault();
+        },
+        { passive: true }
+      );
+    </script>
+  </body>
+</html>
